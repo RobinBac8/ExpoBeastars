@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="./src/style1.css">
 </head>
 <body>
-	<section class="question1">
+	<section class="question1 question" id="Q1">
         <div class="c">
-            <p class="h4">In what year was the series released ?</p>
+            <p class="h3">In what year was the series released ?</p>
             <ul>
                 <li class="nop q1" onclick="reveal(1, 'Q1_2017', false)" id="Q1_2017">2017</li>
                 <li class="nop q1" onclick="reveal(1, 'Q1_2018', false)" id="Q1_2018">2018</li>
@@ -28,19 +28,64 @@
                 <li class="nop q1" onclick="reveal(1, 'Q1_2021', false)" id="Q1_2021">2021</li>
                 <li class="nop q1" onclick="reveal(1, 'Q1_2022', false)" id="Q1_2022">2022</li>
             </ul>
+            <a href="#Q2" class="h5 linka">Next</a>
         </div>
     </section>
-	<section class="question2"></section>
-	<section class="question3"></section>
-	<section class="question4"></section>
-	<section class="question5"></section>
+	<section class="question2 question" id="Q2">
+        <div class="c">
+            <p class="h3">Who die in the first episode ?</p>
+            <ul>
+                <li class="nop q2" onclick="reveal(1, 'Q2_2017', false)" id="Q2_2017">Louis</li>
+                <li class="nop q2" onclick="reveal(1, 'Q2_2018', false)" id="Q2_2018">Legoshi</li>
+                <li class="nop q2" onclick="reveal(1, 'Q2_2019', false)"  id="Q2_2019">Haru</li>
+                <li class="nop q2" onclick="reveal(1, 'Q2_2020', false)" id="Q2_2020">Juno</li>
+                <li class="yes q2" onclick="reveal(1, 'Q2_2021', true)" id="Q2_2021">Tem</li>
+                <li class="nop q2" onclick="reveal(1, 'Q2_2022', false)" id="Q2_2022">Riz</li>
+            </ul>
+            <a href="#Q3" class="h5 linka">Next</a>
+        </div>
+    </section>
+	<section class="question3 question" id="Q3">
+        <div class="c">
+            <p class="h3">Who does Legoshi fall in love with ?</p>
+            <ul>
+                <li class="nop q3" onclick="reveal(1, 'Q3_2017', false)" id="Q3_2017">Louis</li>
+                <li class="yes q3" onclick="reveal(1, 'Q3_2019', true)"  id="Q3_2019">Haru</li>
+                <li class="nop q3" onclick="reveal(1, 'Q3_2020', false)" id="Q3_2020">Juno</li>
+                <li class="nop q3" onclick="reveal(1, 'Q3_2022', false)" id="Q3_2022">Riz</li>
+            </ul>
+            <a href="#Q4" class="h5 linka">Next</a>
+        </div>
+    </section>
+	<section class="question4 question" id="Q4">
+        <div class="c">
+            <p class="h3">what is true?</p>
+            <ul>
+                <li class="nop q3" onclick="reveal(1, 'Q4_2017', false)" id="Q4_2017">herbivores are discriminated against by carnivores</li>
+                <li class="yes q3" onclick="reveal(1, 'Q4_2019', true)"  id="Q4_2019">carnivores are discriminated against by herbivores</li>
+                <li class="nop q3" onclick="reveal(1, 'Q4_2020', false)" id="Q4_2020">Beastars is a original Netflix serie</li>
+                <li class="nop q3" onclick="reveal(1, 'Q4_2022', false)" id="Q4_2022">Beastars is a original Disney+ serie</li>
+            </ul>
+            <a href="#Q5" class="h5 linka">Next</a>
+        </div>
+    </section>
+	<section class="question5 question" id="Q5">
+        <div class="c">
+            <p class="h1 red">Thanks for your attention</p>
+        </div>
+    </section>
+    <section class="controls">
+        <div class="controlsdiv">
+            <a href="./7.html">◀</a>
+        </div>
+    </section>
 		
     
 
 
 
 	<style>
-		@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+		
         @font-face {
             font-family: Beast;
             src: url(./src/font_beastars.ttf);
@@ -66,15 +111,15 @@
 			justify-content: space-between;
             height: 100vh;
 		}
-        .question1 {
+        .question {
             background-image: url("./src/img/Diap1/2.jpg");
             color: #ffffff;
             text-align: center;
             opacity: 0.9;
         }.question2 {
-            background-image: url("./src/img/Diap2/1.jpg");
-        }.question3 {
             background-image: url("./src/img/Diap3/2.jpg");
+        }.question3 {
+            background-image: url("./src/img/Diap2/1.jpg");
         }.question4 {
             background-image: url("./src/img/Diap5/1.png");
         }.question5 {
@@ -83,7 +128,7 @@
 		
 
 
-        .question1 .c {
+        .question .c {
             padding-top: 200px;
             width: auto;
         }
@@ -162,9 +207,32 @@
 		
         
 		.h1  {font-size:7em;}
+        .h3  {font-size: 4em;}
         .h4  {font-size:3em;}
-		.red {color:#E61F52;}
+        .h5  {font-size: 2em;}
+        
+		.red {color:#E61F52;text-shadow: 0 0 7px #ffffff7e}
         li {font-size: 3em;cursor: pointer;}
+        .linka {color: #19c2e0;}
+
+        .controls {
+            z-index: 10000;
+			display: block;
+			position: fixed;
+        }
+        .controlsdiv {
+            margin: 15px;
+            top: 0;
+        }
+        .controlsdiv a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 2em;
+			text-shadow: 0 0 50px #000000
+        }
+        .controlsdiv a:first-of-type {
+            margin-right: 5px;
+        }
         
 	</style>
     <script src="./src/quiz.js"></script>
