@@ -1,0 +1,39 @@
+[
+    {
+        "title" : "Menu",
+        "description" : "Home page",
+        "content" : ""
+    },{
+        "title" : "Presentation",
+        "description" : "Short presentation of the manga/Serie Beastars",
+        "content" : ""
+    },{
+        "title" : "Resuming",
+        "description" : "Just a short history resume",
+        "content" : ""
+    },{
+        "title" : "Questioning",
+        "description" : "A questioning about who we realy are",
+        "content" : ""
+    },{
+        "title" : "Discrimination",
+        "description" : "Many counter-examples on discrimination",
+        "content" : ""
+    },{
+        "title" : "A Manga",
+        "description" : "not just a Netflix serie",
+        "content" : ""
+    },{
+        "title" : "Opinion ?",
+        "description" : "My personal opinion and why recommend Beastars ?",
+        "content" : ""
+    },{
+        "title" : "Behind the scenes",
+        "description" : "2D/3D artists; voices actors etc...",
+        "content" : ""
+    },{
+        "title" : "Smal Quiz",
+        "description" : "A little quiz to see if all has been understood",
+        "content" : ""
+    }
+]
