@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="og:image" content="">
+	<meta name="og:title" content="Beastars Presentation by Robin BACQUET">
+	<meta name="og:site_name" content="">
+	<meta name="og:description" content="just a simple presentation for a English Homework">
+	<meta name="author" content="Robin BACQUET">
+	<title>
+        Beastars Presentation by Robin BACQUET
+    </title>
+    
+
+    <link rel="stylesheet" href="./src/style1.css">
+</head>
+<body>
+	<section class="background"></section>
+	<section class="img1"><img src="./src/img/Diap7/2.png" alt=""></section>
+    <section class="galerie">
+        <div class="item"><!--Legoshi-->
+            <div class="itemimg" id="legoshi"></div>
+            <div class="itemimg" id="jonah_scott"></div>
+        </div>
+        <div class="item"><!--Haru-->
+            <div class="itemimg" id="haru"></div>
+            <div class="itemimg" id="lara_Jill_Miller"></div>
+        </div>
+        <div class="item"><!--Louis-->
+            <div class="itemimg" id="louis"></div>
+            <div class="itemimg" id="griffin_puatu"></div>
+        </div>
+        <div class="item"><!--Juno-->
+            <div class="itemimg" id="juno"></div>
+            <div class="itemimg" id="lauren_landa"></div>
+        </div>
+    </section>
+
+
+	<section class="text">
+		<div>
+            <p class="h1">Behind the voices</p>
+            <p class="h4">The <span class="red">English</span> voices actors</p>
+		</div>
+	</section>
+    
+
+
+
+	<style>
+		@font-face {
+            font-family: Beast;
+            src: url(./src/font_beastars.ttf);
+        }
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+        body {
+            background-color: #1e1e1e;
+        }
+		section{
+			background-repeat: no-repeat;
+			background-position:center;
+			background-clip: border-box;
+			background-size: cover;
+			
+			display: block;
+			position: fixed;
+			justify-content: space-between;
+		}
+        div {
+            
+			background-repeat: no-repeat;
+			background-position:center;
+			background-clip: border-box;
+			background-size: cover;
+        }
+		.background{
+			background-image: url("./src/img/Diap7/1.webp");
+			height: 100vh;
+			width: 100vw;
+			z-index: 100;
+            opacity: 0.7;
+		}
+		.img1 {
+            width: 60vh;
+			bottom: 0;
+			z-index: 200;
+            right: 0;
+
+            display: none;
+		}
+        .img1 img {
+            padding: 0;
+            margin-bottom: -5px;
+        }
+
+        @keyframes flash {
+            0% {
+                background-color: #fff900;
+                box-shadow: 0 0 7px #fff900;
+            }
+            90% {
+                background-color: #484848;
+                box-shadow: none;
+            }
+            10% {
+                background-color: #fff900;
+                box-shadow: 0 0 7px #fff900;
+            }
+        }
+
+        .star:nth-child(1){animation-delay: 0.1s;}
+        .star:nth-child(2){animation-delay: 0.2s;}
+        .star:nth-child(3){animation-delay: 0.3s;}
+        .star:nth-child(4){animation-delay: 0.4s;}
+        .star:nth-child(5){animation-delay: 0.5s;}
+	
+        .galerie {
+            bottom: 0;
+            height: 70vh;
+            width: 100vw;
+            background-color: #1e1e1e70;
+            z-index: 350;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item {
+            margin: 30px;
+            height: 250px;
+            width: 400px;
+            background-color: #E61F52;
+            display: flex;
+        }
+        .itemimg {
+            height: 100%;
+            width: 50%;
+        }
+
+        /*          Legishi         */
+        #legoshi {background-image: url(./src/img/Diap7/Items/1/legoshi.jpg);}
+        #jonah_scott {background-image: url(./src/img/Diap7/Items/1/jonah-scott.jpg);}
+
+        /*          Haru            */
+        #haru {background-image: url(./src/img/Diap7/Items/2/haru.jpg);}
+        #lara_Jill_Miller {background-image: url(./src/img/Diap7/Items/2/lara-jill-miller.jpg);}
+
+        /*          Louis           */
+        #louis {background-image: url(./src/img/Diap7/Items/3/louis.jpg);}
+        #griffin_puatu{background-image: url(./src/img/Diap7/Items/3/griffin-puatu.jpg);}
+
+        /*          Juno            */
+        #juno {background-image: url(./src/img/Diap7/Items/4/juno.jpg);}
+        #lauren_landa {background-image: url(./src/img/Diap7/Items/4/lauren-landa.jpg);}
+
+
+        /*
+        background-image: url(./src/img/Diap7/Items/);
+        */
+
+
+		.text {
+			width: 100vw;
+			margin-bottom: 30px;
+			z-index: 400;
+            top: 5vh;
+            text-align: center;
+            color: #ffffff;
+		}
+		
+        
+		.h1  {font-size:7em;font-family: Beast;}
+        .h4  {font-size:3em;font-family: Beast;}
+		.red {font-family:Beast;color:#E61F52;}
+        
+	</style>
+</body>
+</html>

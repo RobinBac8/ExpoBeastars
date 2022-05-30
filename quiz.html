@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="og:image" content="">
+	<meta name="og:title" content="Beastars Presentation by Robin BACQUET">
+	<meta name="og:site_name" content="">
+	<meta name="og:description" content="just a simple presentation for a English Homework">
+	<meta name="author" content="Robin BACQUET">
+	<title>
+        Beastars Presentation by Robin BACQUET
+    </title>
+    
+
+    <link rel="stylesheet" href="./src/style1.css">
+</head>
+<body>
+	<section class="question1">
+        <div class="c">
+            <p class="h4">In what year was the series released ?</p>
+            <ul>
+                <li class="nop q1" onclick="reveal(1, 'Q1_2017', false)" id="Q1_2017">2017</li>
+                <li class="nop q1" onclick="reveal(1, 'Q1_2018', false)" id="Q1_2018">2018</li>
+                <li class="yes q1" onclick="reveal(1, 'Q1_2019', true)"  id="Q1_2019">2019</li>
+                <li class="nop q1" onclick="reveal(1, 'Q1_2020', false)" id="Q1_2020">2020</li>
+                <li class="nop q1" onclick="reveal(1, 'Q1_2021', false)" id="Q1_2021">2021</li>
+                <li class="nop q1" onclick="reveal(1, 'Q1_2022', false)" id="Q1_2022">2022</li>
+            </ul>
+        </div>
+    </section>
+	<section class="question2"></section>
+	<section class="question3"></section>
+	<section class="question4"></section>
+	<section class="question5"></section>
+		
+    
+
+
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+        @font-face {
+            font-family: Beast;
+            src: url(./src/font_beastars.ttf);
+        }
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Beast;
+            text-shadow: 0 0 20px #494949;
+            
+		}
+        body {
+            background-color: #000000;
+        }
+		section{
+			background-repeat: no-repeat;
+			background-position:center;
+			background-clip: border-box;
+			background-size: cover;
+			
+			display: block;
+			justify-content: space-between;
+            height: 100vh;
+		}
+        .question1 {
+            background-image: url("./src/img/Diap1/2.jpg");
+            color: #ffffff;
+            text-align: center;
+            opacity: 0.9;
+        }.question2 {
+            background-image: url("./src/img/Diap2/1.jpg");
+        }.question3 {
+            background-image: url("./src/img/Diap3/2.jpg");
+        }.question4 {
+            background-image: url("./src/img/Diap5/1.png");
+        }.question5 {
+            background-image: url("./src/img/Diap6/1.webp");
+        }
+		
+
+
+        .question1 .c {
+            padding-top: 200px;
+            width: auto;
+        }
+
+
+
+
+
+
+        .nop.clicked{
+            text-decoration:line-through;
+            color: #E61F52;
+        }
+        .nop.clicked::after{
+            content: "";
+    
+            margin-left: 10px;
+            padding-right: 45px;
+            background-repeat: no-repeat;
+			background-position:center;
+			background-clip: border-box;
+			background-size: contain;
+            background-image: url("./src/img/Quiz/error.svg");
+        }
+        .yes.clicked{
+            color: #19E0AD;
+        }
+        .yes.clicked::after{
+            content: "";
+            margin-left: 10px;
+            padding-right: 45px;
+            background-repeat: no-repeat;
+			background-position:center;
+			background-clip: border-box;
+			background-size: contain;
+            background-image: url("./src/img/Quiz/check.svg");
+        }
+
+        @keyframes flash {
+            0% {
+                background-color: #fff900;
+                box-shadow: 0 0 7px #fff900;
+            }
+            90% {
+                background-color: #484848;
+                box-shadow: none;
+            }
+            10% {
+                background-color: #fff900;
+                box-shadow: 0 0 7px #fff900;
+            }
+        }
+
+
+        .star {
+            animation: flash 0.8s linear infinite;
+        }
+
+
+
+        .star:nth-child(1){animation-delay: 0.1s;}
+        .star:nth-child(2){animation-delay: 0.2s;}
+        .star:nth-child(3){animation-delay: 0.3s;}
+        .star:nth-child(4){animation-delay: 0.4s;}
+        .star:nth-child(5){animation-delay: 0.5s;}
+	
+
+		.text {
+			width: 100vw;
+			margin-bottom: 30px;
+			z-index: 400;
+            bottom: 45vh;
+            text-align: center;
+            color: #ffffff;
+		}
+		
+        
+		.h1  {font-size:7em;}
+        .h4  {font-size:3em;}
+		.red {color:#E61F52;}
+        li {font-size: 3em;cursor: pointer;}
+        
+	</style>
+    <script src="./src/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="og:image" content="">
+	<meta name="og:title" content="Beastars Presentation by Robin BACQUET">
+	<meta name="og:site_name" content="">
+	<meta name="og:description" content="just a simple presentation for a English Homework">
+	<meta name="author" content="Robin BACQUET">
+	<title>
+        Beastars Presentation by Robin BACQUET
+    </title>
+    
+
+    <link rel="stylesheet" href="./src/style1.css">
+</head>
+<body>
+	<section class="background"></section>
+	<section class="img1"><img src="./src/img/Diap6/2.webp" alt=""></section>
+    <section class="stars">
+        <div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+    </section>
+	<section class="text">
+		<div>
+            <p class="h1">My <span class="red">Opinion</span></p>
+            <p class="h4">Lorem ipsum dolor sit amet</p>
+		</div>
+	</section>
+    
+
+
+
+	<style>
+		@font-face {
+            font-family: Beast;
+            src: url(./src/font_beastars.ttf);
+        }
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+        body {
+            background-color: #1e1e1e;
+        }
+		section{
+			background-repeat: no-repeat;
+			background-position:center;
+			background-clip: border-box;
+			background-size: cover;
+			
+			display: block;
+			position: fixed;
+			justify-content: space-between;
+		}
+		.background{
+			background-image: url("./src/img/Diap6/1.webp");
+			height: 100vh;
+			width: 100vw;
+			z-index: 100;
+            opacity: 0.7;
+		}
+		.img1 {
+            width: 60vh;
+			bottom: 0;
+			z-index: 200;
+		}
+        .img1 img {
+            padding: 0;
+            margin-bottom: -10px;
+        }
+
+        @keyframes flash {
+            0% {
+                background-color: #fff900;
+                box-shadow: 0 0 7px #fff900;
+            }
+            90% {
+                background-color: #484848;
+                box-shadow: none;
+            }
+            10% {
+                background-color: #fff900;
+                box-shadow: 0 0 7px #fff900;
+            }
+        }
+
+        .stars {
+            height: 50vh;
+            z-index: 300;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            display:flex;
+            flex-direction:row;
+            left: 9vw;
+            top: 2em;
+        }
+        .stars div {
+            display: flex;
+            text-align: center;
+            
+            
+        }
+        .star {
+            height: 14vw;
+            width: 14vw;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background-color: yellow;
+            margin-right: 3vw;
+            
+            animation: flash 1s linear infinite;
+        }
+
+
+
+        .star:nth-child(1){animation-delay: 0.1s;}
+        .star:nth-child(2){animation-delay: 0.2s;}
+        .star:nth-child(3){animation-delay: 0.3s;}
+        .star:nth-child(4){animation-delay: 0.4s;}
+        .star:nth-child(5){animation-delay: 0.5s;}
+	
+
+		.text {
+			width: 100vw;
+			margin-bottom: 30px;
+			z-index: 400;
+            bottom: 45vh;
+            text-align: center;
+            color: #ffffff;
+		}
+		
+        
+		.h1  {font-size:7em;font-family: Beast;}
+        .h4  {font-size:3em;font-family: Beast;}
+		.red {font-family:Beast;color:#E61F52;}
+        
+	</style>
+</body>
+</html>
